@@ -14,14 +14,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button tombol1 = findViewById(R.id.tombol1);
+        Button tombol1 = findViewById(R.id.tombol);
         tombol1.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.tombol1) {
+        if (v.getId() == R.id.tombol) {
             Intent intent = new Intent(MainActivity.this, Activity2.class);
             startActivity(intent);
         }
